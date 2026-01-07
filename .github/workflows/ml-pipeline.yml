@@ -28,7 +28,7 @@ jobs:
       - name: Run unit test
         run: |
           export PYTHONPATH=$PYTHONPATH:.
-          pytest-v
+          pytest -v
 
       - name : Train model
         run: python src/train.py
